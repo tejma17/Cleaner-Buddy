@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_mark">Mark</string>
+    <string name="title_activity_drawer">drawer</string>
+
+    <string name="title_activity_maps">Map</string>
+
+</resources>

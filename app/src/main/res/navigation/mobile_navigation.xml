@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.garbagecleaner.fragment.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/nav_mark"
+        android:name="com.example.garbagecleaner.fragment.MarkFragment"
+        android:label="@string/menu_mark"
+        tools:layout="@layout/fragment_markdone" />
+
+    <fragment
+        android:id="@+id/nav_scanning"
+        android:name="com.example.garbagecleaner.fragment.ScanCodeFragment"
+        android:label="Scan Code"
+        tools:layout="@layout/activity_scan_code" />
+
+
+
+</navigation>
