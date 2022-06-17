@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="415dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/side_nav_bar"
+        android:transitionName="layout_trans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginLeft="2dp">
+
+        <TextView
+            android:id="@+id/welcomeid"
+            android:layout_width="175dp"
+            android:layout_height="68dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="About Us"
+            android:textColor="#FAFAFA"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:transitionName="welcome_trans"
+            app:fontFamily="@font/capriola"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.762"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/propic"
+            android:layout_width="147dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:transitionName="logo_trans"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/welcomeid"
+            app:layout_constraintHorizontal_bias="0.409"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.507"
+            app:srcCompat="@drawable/logo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="347dp"
+        android:layout_height="517dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.375" >
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/textView"
+            android:layout_width="347dp"
+            android:layout_height="517dp"
+            android:fontFamily="@font/taviraj"
+            android:text="\n\t\t\t\t\t\tEvery day, the respective vehicle will collect the garbage from different houses in that particular area. There is two way verification system. First the
+    collector marks the house as visited, with which the respective user will get a
+    notification about the collection process. It is then verified by user.\n\n\t\t\t\t\t\User can view the collector profile. This will ensure the security of the
+    process. Only authorized people are allowed to use the system.\n\n\t\t\t\t\t\User can file a complaint if garbage is not collected within provided time.
+    Admin will assign a vehicle nearest to location and the garbage will be picked up.
+    User can notify in advance about the house closure i.e. house will be closed for
+    mentioned days to make the process more fast and accurate."
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
